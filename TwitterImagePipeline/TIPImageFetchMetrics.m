@@ -240,7 +240,7 @@ static void _hit(SELF_ARG,
 
 - (NSString *)description
 {
-    const size_t count = sizeof(_infos) / sizeof(_infos[0]);
+    const NSInteger count = sizeof(_infos) / sizeof(_infos[0]);
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity:count];
     for (TIPImageLoadSource i = 1; i <= count; i++) {
         TIPImageFetchMetricInfo *info = _infos[i - 1];
